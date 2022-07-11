@@ -1,0 +1,14 @@
+body {
+    background-color: #FFDEDE;
+}
+
+.container-fluid {
+    text-align: center;
+    margin: 0;
+    background-color: #ABC9FF;
+    height: 4rem;
+}
+
+.btn {
+    margin: 1rem 0.2rem;
+}
