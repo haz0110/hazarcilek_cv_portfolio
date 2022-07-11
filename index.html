@@ -26,47 +26,80 @@
     ></script>
 
     <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--CUSTOM STYLES-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-dark">
     <!--HEADER CONTAINER-->
-    <div class="container-fluid p-3 text-center bg-light">
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-outline-dark border-0">
-            Resume
-          </button>
-          <button type="button" class="btn btn-dark border-0 fs-2">
-            Portfolio
-          </button>
-          <button type="button" class="btn btn-outline-dark border-0">
-            About
-          </button>
-        </div>
-      </div>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand brandFontStyle fs-2 me-5" href="#">hazarcilek</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!--BRAND CONTAINER-->
-    <div class="container-fluid pb-2 text-center bg-light w-25 rounded-bottom">
-      <div class="row">
-        <div class="navbar-brand brandFontStyle fs-1">
-          hazarcilek
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!--Portfolio Nav-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Portfolio
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">3D Model</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">3D Scene</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Digital Ad</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">NFT Avatar</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Jersey</a></li>
+              </ul>
+            </li>
+
+            <!--Resume Nav-->
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Resume </a>
+            </li>
+
+            <!--About Nav-->
+            <li class="nav-item">
+              <a class="nav-link" href="#"> About </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
     <!--!!!!!!!!!!!!!!!!!!!!!!!-->
     <!--3D MODEL HEADER-->
     <div class="container-fluid text-center">
       <div
         id="3dModelSection"
-        class="row mt-5 mb-0 mx-5 mb-0 py-3 color3DModelCard rounded-top"
+        class="row mt-5 mb-0 mx-5 mb-0 py-3 colorContainerOverlay-ver01 rounded-top"
       >
         <div class="col">
           <button
@@ -96,10 +129,10 @@
     <!--!!!!!!!!!!!!!!!!!!!!!!!-->
     <!--3D MODEL CONTAINER-->
     <div class="container-fluid text-center">
-      <div class="row mx-5 pb-3 px-3 rounded-bottom color3DModelBackground">
+      <div class="row mx-5 pb-3 px-3 rounded-bottom colorContainerBG-ver01">
         <!--CARD - Minimalist Clock-->
         <div class="col-xs-6 col-md-4 pt-4">
-          <div class="card m-0 color3DModelCard">
+          <div class="card m-0 colorContainerOverlay-ver01">
             <img
               src="./portfolio-assets/3D Models/clock_3d_hazarcilek.jpg"
               class="card-img-top p-2 rounded"
@@ -119,7 +152,7 @@
 
         <!--CARD - Porcelain Cup-->
         <div class="col-xs-6 col-md-4 pt-4">
-          <div class="card m-0 color3DModelCard">
+          <div class="card m-0 colorContainerOverlay-ver01">
             <img
               src="./portfolio-assets/3D Models/porcelainCup_3d_hazarcilek.jpg"
               class="card-img-top p-2 rounded"
@@ -140,7 +173,7 @@
 
         <!--CARD - Seedling Emoji-->
         <div class="col-xs-6 col-md-4 pt-4">
-          <div class="card m-0 color3DModelCard">
+          <div class="card m-0 colorContainerOverlay-ver01">
             <img
               src="./portfolio-assets/3D Models/seedlingEmoji_3d_hazarcilek.jpg"
               class="card-img-top p-2 rounded"
@@ -171,13 +204,11 @@
     <div class="container-fluid text-center">
       <div
         id="3DSceneSection"
-        class="row mt-5 mb-0 mx-5 mb-0 py-3 color3DModelCard rounded-top"
+        class="row mt-5 mb-0 mx-5 mb-0 py-3 colorContainerOverlay-ver02 rounded-top"
       >
         <div class="col">
-          <button
-            class="btn btn-outline-light border-0 border-dark rounded"
-          >
-          <a class="resetLink text-dark"> 3D Model </a>
+          <button class="btn btn-outline-light border-0 border-dark rounded">
+            <a class="resetLink text-dark"> 3D Model </a>
           </button>
           <button class="btn btn-dark border-0 rounded">
             <a class="resetLink text-light"> 3D Scene </a>
@@ -194,16 +225,18 @@
         </div>
       </div>
     </div>
-    <!--3D MODEL HEADER-->
+    <!--3D SCENE HEADER-->
     <!--!!!!!!!!!!!!!!!!!!!!!!!-->
 
     <!--!!!!!!!!!!!!!!!!!!!!!!!-->
-    <!--3D MODEL CONTAINER-->
+    <!--3D SCENE CONTAINER-->
     <div class="container-fluid text-center">
-      <div class="row mx-5 pb-3 px-3 rounded-bottom color3DModelBackground">
+      <div class="row mx-5 pb-3 px-3 rounded-bottom colorContainerBG-ver02">
+
+
         <!--CARD - Albert Long Hall -->
         <div class="col-xs-6 col-md-4 pt-4">
-          <div class="card m-0 color3DModelCard">
+          <div class="card m-0 colorContainerOverlay-ver02">
             <img
               src="./portfolio-assets/3D Scenes/3D Scene - Albert Long Hall Stylized Render Ang 01.jpg"
               class="card-img-top p-2 rounded"
@@ -223,7 +256,7 @@
 
         <!--CARD - Snowglobe-->
         <div class="col-xs-6 col-md-4 pt-4">
-          <div class="card m-0 color3DModelCard">
+          <div class="card m-0 colorContainerOverlay-ver02">
             <img
               src="./portfolio-assets/3D Scenes/3D Scene - Bogazici University New Year Model.jpg"
               class="card-img-top p-2 rounded"
@@ -244,7 +277,7 @@
 
         <!--CARD - Foggy Forest at Night-->
         <div class="col-xs-6 col-md-4 pt-4">
-          <div class="card m-0 color3DModelCard">
+          <div class="card m-0 colorContainerOverlay-ver02">
             <img
               src="./portfolio-assets/3D Scenes/3D Scene - Foggy Forest at Night.png"
               class="card-img-top p-2 rounded"
@@ -264,7 +297,7 @@
 
         <!--CARD - Gothic Room-->
         <div class="col-xs-6 col-md-4 pt-4">
-          <div class="card m-0 color3DModelCard">
+          <div class="card m-0 colorContainerOverlay-ver02">
             <img
               src="./portfolio-assets/3D Scenes/3D Scene - Gothic Room - Ver 01.JPG"
               class="card-img-top p-2 rounded croppedImage"
@@ -281,12 +314,9 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
     <!--3D MODELS CONTAINER END-->
     <!--!!!!!!!!!!!!!!!!!!!!!!!-->
-
   </body>
 </html>
