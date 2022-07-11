@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .haz0110-fontawesome-icons {
     color: antiquewhite;
 }
@@ -12,4 +16,13 @@
 
 .resetLink {
     text-decoration: none;
+}
+
+.brandFontStyle {
+    font-family: 'Mr Dafoe', cursive;
+}
+
+.croppedImage {
+    object-fit: cover;
+    overflow: hidden;
 }
