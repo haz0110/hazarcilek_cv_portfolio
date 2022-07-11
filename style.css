@@ -6,12 +6,20 @@ body {
     color: antiquewhite;
 }
 
-.color3DModelBackground {
+.colorContainerBG-ver01 {
     background-color: #4b3a52;
 }
 
-.color3DModelCard {
+.colorContainerOverlay-ver01 {
     background-color: #E7AB79;
+}
+
+.colorContainerBG-ver02 {
+    background-color: #F47C7C;
+}
+
+.colorContainerOverlay-ver02 {
+    background-color: #EF9F9F;
 }
 
 .resetLink {
